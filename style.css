@@ -1,38 +1,53 @@
 header {
-    border: 1px solid black;
     height: 150px;
-    width: 380px;
-    text-align: right;
+    width: 350px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-
+    order: 1;
 }
 body{
     display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 30mm 45mm; 
   
 } 
 .container {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-width: 21cm;
-        height: 29.7cm;
-        margin: 30mm 45mm; 
-        box-sizing: border-box;
-        padding: 20px;
-
-  background: repeating-linear-gradient(
-  45deg,
-  #606dbc,
-  #606dbc 10px,
-  #465298 10px,
-  #465298 20px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
 }
-header {
-display: flex;
-order: 1;
-
+.main {
+    border: 2px solid purple;
+    display: flex;
+    flex-flow: row;
+}
+.education {
+    border: 1px solid black;
+    height: 150px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    position: relative;
+    right: 237px;
+    top: 150px;
+}
+.profile {
+    border: 1px solid black;
+    height: 150px;
+    width: 1600px;
+}
+.contact {
+    border: 1px solid black;
+    height: 220px;
+}
+.work-experience {
+    border: 1px solid black;
+    height: 250px;
 }
