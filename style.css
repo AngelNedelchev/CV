@@ -1,0 +1,38 @@
+header {
+    border: 1px solid black;
+    height: 150px;
+    width: 380px;
+    text-align: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+body{
+    display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+  
+} 
+.container {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+width: 21cm;
+        height: 29.7cm;
+        margin: 30mm 45mm; 
+        box-sizing: border-box;
+        padding: 20px;
+
+  background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px);
+}
+header {
+display: flex;
+order: 1;
+
+}
