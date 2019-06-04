@@ -1,53 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 header {
-    height: 150px;
-    width: 350px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    order: 1;
+    flex-direction: column;
 }
 body{
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
-    width: 21cm;
-    height: 29.7cm;
-    margin: 30mm 45mm; 
-  
+    width: 216mm;
+    height: 279mm; 
+    padding: 40px;
+    margin: 0px;
+    color: lightblue;
+    background: repeating-linear-gradient(
+    45deg,
+  #989dbe,
+  #989dbe 15px,
+  #acacac 15px,
+  #acacac 30px);  
 } 
 .container {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 25%  75% ;
     justify-content: space-between;
-    box-sizing: border-box;
     padding: 20px;
+    position: relative;
 }
 .main {
-    border: 2px solid purple;
-    display: flex;
-    flex-flow: row;
-}
-.education {
-    border: 1px solid black;
-    height: 150px;
-    width: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 40%  40% ;
+    grid-template-rows: 40% 40% ;
     position: relative;
-    right: 237px;
-    top: 150px;
+    justify-content: space-around;
 }
 .profile {
-    border: 1px solid black;
-    height: 150px;
-    width: 1600px;
+    margin-left: 30px;
 }
 .contact {
-    border: 1px solid black;
     height: 220px;
+    margin-left: 30px;
 }
 .work-experience {
-    border: 1px solid black;
-    height: 250px;
+    height: 200px;
+    width: 350px;
+    margin-right: 40px;
+}
+.intersets-skills {
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    position: relative;
+    justify-content: space-around;
+}
+.interests {
+    margin-left: 30px;
+    display: grid;
+}
+.languages-hobbies {
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    position: relative;
+    justify-content: space-around;
+}
+.languages {
+    margin-left: 30px;
+}
+hr {
+    border: 1px solid gray;
+    width: 90%;
+    margin-bottom: 10px;
+}
+ul {
+    padding: 0px;
+    list-style: none;
+}
+a:link {
+    color: lightblue;
+}
+a:visited {
+    color: lightblue;
+}
+.interests h2 {
+    height: 10px;
+}
+.abc {
+position: absolute;
+z-index: 1;
+width: 1000px;
+height: 2000px;
+background-color: #5f6697;
+display: grid;
+left: 400px;
+top: -350px; 
+transform: rotate(38.2deg);
+}
+.wrapper {
+    background-color: rgb(0, 0, 85);
+    height: 277mm;
+    width: 216mm;
+    position: absolute;
+    z-index: 2;
+}
+.white-space {
+    background-color: white;
+    width: 3500px;
+    height: 3000px;
+    display: grid;
+    position: absolute;
+    left: 895px;
+    top: 0px;
+    z-index: 3;
+}
+.white-space2 {
+    background-color: rgb(255, 255, 255);
+    width: 3500px;
+    height: 3000px;
+    display: grid;
+    position: absolute;
+    left: 1px;
+    top: 1120px;
+    z-index: 4;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin-top: 0px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+.container h1, .container h2 {
+    text-align: right;
+    letter-spacing: 5px;
+}
+.imga {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    width: 200px;
+    display: flex;
+    flex-flow: nowrap;
 }
